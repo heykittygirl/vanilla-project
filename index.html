@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/3f99bc4934.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form"></form>
+      <input type="text" placeholder="Type Your City Here" id="city-input" />
+      <input type="submit" id="submit-button" />
+      <button id="current-location">Current Location</button>
+      <h1>Portland</h1>
+      <ul>
+        <li>Day & Time</li>
+        <li>Condition</li>
+      </ul>
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/fog.png"
+            alt="Fog"
+          />
+          62 °F|°C
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Precipitation:</li>
+            <li>Humidity:</li>
+            <li>Wind:</li>
+          </ul>
+        </div>
+      </div>
+      <small> Open-source code by Katie Bergmann </small>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
