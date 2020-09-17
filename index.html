@@ -19,32 +19,43 @@
   </head>
   <body>
     <div class="container">
-      <form id="search-form"></form>
-      <input type="text" placeholder="Type Your City Here" id="city-input" />
-      <input type="submit" id="submit-button" />
-      <button id="current-location">Current Location</button>
-      <h1>Portland</h1>
-      <ul>
-        <li>Day & Time</li>
-        <li>Condition</li>
-      </ul>
-      <div class="row">
-        <div class="col-md-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/fog.png"
-            alt="Fog"
-          />
-          62 °F|°C
-        </div>
-        <div class="col-md-6">
-          <ul>
-            <li>Precipitation:</li>
-            <li>Humidity:</li>
-            <li>Wind:</li>
-          </ul>
+      <div class="weather-app">
+        <form id="search-form"></form>
+        <input type="text" placeholder="Type Your City Here" id="city-input" />
+        <input type="submit" id="submit-button" />
+        <button type="button" class="btn btn-secondary">
+          Current Location
+        </button>
+        <h1>Portland</h1>
+        <ul>
+          <li>Day & Time</li>
+          <li>Condition</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/fog.png"
+              alt="Fog"
+            />
+            62 °F|°C
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>Precipitation:</li>
+              <li>Humidity:</li>
+              <li>Wind:</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <small> Open-source code by Katie Bergmann </small>
+      <small>
+        <a
+          href="https://github.com/heykittygirl/vanilla-project"
+          target="_blank"
+          >Open-Source Code</a
+        >
+        by Katie Bergmann
+      </small>
     </div>
     <script src="src/app.js"></script>
   </body>
