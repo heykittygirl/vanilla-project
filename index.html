@@ -11,10 +11,6 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <script
-      src="https://kit.fontawesome.com/3f99bc4934.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@600&family=Syne&display=swap");
@@ -26,22 +22,21 @@
         <form id="search-form"></form>
         <input type="text" placeholder="Type Your City Here" id="city-input" />
         <input type="submit" id="submit-button" />
-        <button type="button" class="btn btn-secondary">
-          Current Location
-        </button>
+        <button class="current-location">Current Location</button>
         <h1>Portland</h1>
         <ul>
           <li>Day & Time</li>
           <li>Condition</li>
         </ul>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6" id="temp">
             <img
-              src="https://ssl.gstatic.com/onebox/weather/64/fog.png"
-              alt="Fog"
+              src="https://openweathermap.org/img/wn/04d@2x.png"
+              alt="clouds"
             />
-            62 °F|°C
+            <strong>62</strong>°F
           </div>
+
           <div class="col-md-6">
             <ul>
               <li>Precipitation:</li>
