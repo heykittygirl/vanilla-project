@@ -27,6 +27,10 @@ small {
   color: #a3543d;
 }
 
+.current-date {
+  color: #a3543d;
+}
+
 .current-location {
   background-color: #a3543d;
   border: 1px solid #d49a89;
