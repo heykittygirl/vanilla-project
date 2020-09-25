@@ -24,12 +24,20 @@ function formatDate(date) {
 }
 console.log(formatDate(new Date()));
 
-function showTemperature(response) {
-  console.log(response);
+function displayWeatherCondition(response) {
+  document.querySelector("#city").innerHTML = response.data.name;
+  document.querySelector("#temp").innerHMTL = Math.round(
+    response.data.main.temp
+  );
 }
 
-let apiKey = "81d3b72cf20047c3d27312be14b34f47";
-let apiUrl =
-  "https://api.openweathermap.org/data/2.5/weather?q=portland&units=imperial&appid=81d3b72cf20047c3d27312be14b34f47";
+function search(event) {
+  event.preventDefault();
+  let apiKey = "81d3b72cf20047c3d27312be14b34f47";
+  let city = document.querySelector("#city-input").value;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayWeatherCondition);
+}
 
-axios.get(apiUrl).then(showTemperature);
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", search);

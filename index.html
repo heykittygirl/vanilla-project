@@ -19,11 +19,16 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form id="search-form"></form>
-        <input type="text" placeholder="Type Your City Here" id="city-input" />
-        <input type="submit" id="submit-button" />
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Type Your City Here"
+            id="city-input"
+          />
+          <input type="submit" value="Search" id="submit-button" />
+        </form>
         <button class="current-location">Current Location</button>
-        <h1>Portland</h1>
+        <h1 id="city">Portland</h1>
         <ul>
           <span class="current-date"><li>Date</li></span>
           <li>Condition</li>
@@ -34,7 +39,8 @@
               src="https://openweathermap.org/img/wn/04d@2x.png"
               alt="clouds"
             />
-            <strong>62</strong>°F
+            <span class="temp" id="temp">62</span>
+            <span id="units">°F</span>
           </div>
 
           <div class="col-md-6">
@@ -45,7 +51,7 @@
             </ul>
           </div>
         </div>
-        <small class="source-code">
+        <small class="source-code" id="source-code">
           <a
             href="https://github.com/heykittygirl/vanilla-project"
             target="_blank"
