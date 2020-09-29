@@ -1,12 +1,3 @@
-h1 {
-  color: #557571;
-  font-family: "Rokkitt", serif;
-  font-size: 36px;
-  font-weight: 400;
-  padding: 3px;
-  text-align: left;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -15,11 +6,11 @@ ul {
 li {
   color: #a3543d;
   font-family: "Syne", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 100;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   text-align: left;
 }
 
@@ -28,6 +19,7 @@ small {
 }
 
 .current-date {
+  font-size: 24px;
   color: #a3543d;
 }
 
@@ -45,6 +37,12 @@ small {
   color: #a3543d;
 }
 
+.date-and-condition {
+  position: relative;
+  bottom: 20px;
+  margin-left: 2px;
+}
+
 .weather-app-wrapper {
   margin: 30px auto;
   max-width: 600px;
@@ -55,6 +53,19 @@ small {
   border: 1px solid #d49a89;
   border-radius: 4px;
   padding: 20px;
+}
+
+.weather-details {
+  position: relative;
+  top: 42px;
+}
+
+#city {
+  color: #557571;
+  font-family: "Rokkitt", serif;
+  font-size: 60px;
+  padding: 10px 0px 0px 0px;
+  text-align: left;
 }
 
 #city-input {
@@ -81,7 +92,22 @@ small {
 
 #temp {
   color: #557571;
-  font-size: 36px;
+  font-size: 60px;
+  font-weight: 200px;
+}
+
+#units {
+  color: #557571;
+  font-size: 24px;
+  line-height: 80px;
+  position: relative;
+  bottom: 30px;
+}
+
+#weather-icon {
+  margin: 0px 5px 40px 0px;
+  height: 150px;
+  width: 150px;
 }
 
 ::placeholder {
